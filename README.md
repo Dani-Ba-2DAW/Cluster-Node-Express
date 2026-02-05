@@ -43,3 +43,22 @@ Mientras se está ejecuta un servicio (sea o no con clúster), ejecutamos el com
 ![Imagen de pruebas clúster 1](./img/010.png)
 <br>
 ![Imagen de pruebas clúster 2](./img/011.png)
+
+## Instalación y Tests con PM2
+Instalamos el paquete **pm2** con el comando **npm install -g pm2** (en la provisión está en la misma línea que loadtest).
+<br>
+Para ejecutar la app que queremos, usamos el comando **pm2 start [nombre_app].js -i 0**.
+<br>
+Y para pararlo, el comando **pm2 stop [nombre_app].js**.
+<br>
+![Imagen de funcionamiento de pm2](./img/012.png)
+
+### Pruebas sin clúster
+![Imagen de pruebas pm2 1](./img/013.png)
+<br>
+![Imagen de pruebas pm2 2](./img/014.png)
+
+### Pruebas con clúster
+![Imagen de pruebas pm2 clúster 1](./img/015.png)
+<br>
+![Imagen de pruebas pm2 clúster 2](./img/016.png)

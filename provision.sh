@@ -9,7 +9,7 @@ apt install -y nodejs
 
 npm init
 npm install express
-npm install -g loadtest
+npm install -g loadtest pm2
 
 cp /vagrant/config/app.js .
 cp /vagrant/config/appCluster.js .
