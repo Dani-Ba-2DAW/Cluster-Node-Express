@@ -28,3 +28,18 @@ Abrimos 2 pestañas (la primera se ejecuta antes que la segunda) y da tiempos de
 ![Imagen de funcionamiento clúster 1](./img/006.png)
 <br>
 ![Imagen de funcionamiento clúster 2](./img/007.png)
+
+## Tests con el paquete loadtest
+Instalamos el paquete **loadtest** con el comando **npm install -g loadtest** (en la provisión)
+
+Mientras se está ejecuta un servicio (sea o no con clúster), ejecutamos el comando **loadtest http://localhost:3000/api/500000 -n 1000 -c 100** para hacer pruebas
+
+### Pruebas sin clúster
+![Imagen de pruebas 1](./img/008.png)
+<br>
+![Imagen de pruebas 2](./img/009.png)
+
+### Pruebas con clúster
+![Imagen de pruebas clúster 1](./img/010.png)
+<br>
+![Imagen de pruebas clúster 2](./img/011.png)
