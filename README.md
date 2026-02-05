@@ -62,3 +62,12 @@ Y para pararlo, el comando **pm2 stop [nombre_app].js**.
 ![Imagen de pruebas pm2 clúster 1](./img/015.png)
 <br>
 ![Imagen de pruebas pm2 clúster 2](./img/016.png)
+
+## Crear Ecosystem con PM2
+Ejecutamos el comando **ecosystem.config.js** y lo modificamos para que quede así.
+<br>
+![Imagen de configuración de Ecosystem](./img/017.png)
+
+Para ejecutar Ecosystem, símplemente usamos el comando **pm2 [start|restart|reload|stop|delete] ecosystem.config.js**
+<br>
+![Imagen de funcionamiento de Ecosystem](./img/018.png)

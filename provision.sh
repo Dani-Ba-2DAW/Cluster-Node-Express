@@ -15,3 +15,6 @@ cp /vagrant/config/app.js .
 cp /vagrant/config/appCluster.js .
 # node app.js
 # node appCluster.js
+
+pm2 ecosystem
+cp /vagrant/config/ecosystem.config.js .
