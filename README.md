@@ -71,3 +71,24 @@ Ejecutamos el comando **ecosystem.config.js** y lo modificamos para que quede as
 Para ejecutar Ecosystem, símplemente usamos el comando **pm2 [start|restart|reload|stop|delete] ecosystem.config.js**
 <br>
 ![Imagen de funcionamiento de Ecosystem](./img/018.png)
+
+## Tarea
+### PM2 ls
+El comando **pm2 ls** muestra las instancias creada en pm2 con sus datos.
+<br>
+![Imagen de Tarea pm2 ls](./img/019.png)
+
+### PM2 logs
+El comando **pm2 ls** muestra los logs EN VIVO, significando que está en ejecución constante hasta ser frenado manualmente (de forma predeterminada) y mostrando los logs actuales y próximos hasta la finalización del comando.
+<br>
+![Imagen de Tarea pm2 logs](./img/020.png)
+
+### PM2 monit
+El comando **pm2 ls** muestra los procesos en ejecución a mayor detalle y actualizándose cada segundo (y friendly para el usuario), tanto los procesos independientes (y sus logs correspondientes) como otras métricas, como la latencia o la memoria que consume.
+<br>
+![Imagen de Tarea pm2 logs](./img/021.png)
+
+### Pregunta
+**P: ¿Sabrías decir por qué en algunos casos concretos, como este, la aplicación sin clusterizar tiene mejores resultados?**
+<br>
+R: La aplicación sin clúster puede rendir mejor porque el clúster consume más recursos, y hay poca concurrencia, pocos núcleos o tareas muy intensivas de CPU, ese consumo adicional puede ser mayor que el beneficio que nos brinda, haciendo que un solo proceso sea más rápido.
